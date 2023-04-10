@@ -1,0 +1,57 @@
+@use '_vars';
+
+header{
+  height: auto;
+  background-color: var(--darkBlue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: relative;
+}
+.schoolLogo{
+  width: 70px;
+}
+.button-navbar{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  width: 45px;
+  height: auto;
+  padding: 5px;
+  background-color: var(--darkBlue);
+  border-radius: 5px;;
+}
+button:hover{
+  cursor: pointer;
+}
+button:focus{
+  border:2px solid orangered
+}
+.menuLines{
+  width: 30px;
+  height: auto;
+}
+.nav-Bar{
+  position: absolute;
+  border: 1px gray solid;
+  display: flex;
+  top: 47px;
+  width: 70px;
+  height: auto;
+  justify-content: center;
+  display: none;
+}
+.inactive-Nav{
+  display: none;
+}
+
+.nav-Bar ul{
+  list-style: none;
+  line-height: 20px;
+}
+
