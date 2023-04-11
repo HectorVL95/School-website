@@ -1,16 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/HeaderNav.scss'
 import SchoolLogo from '../assets/school-logo.png'
 import MenuLines from '../assets/menu-lines.svg'
+import Cancel from '../assets/cancel-close-svgrepo-com.svg'
 
 
 
 const HeaderNav = () => {
   
- /*document.querySelector('.button').addEventListener('click', showNavbar)
-  function showNavbar(){
-    document.querySelector('.nav-Bar').classList.toggle('inactive-Nav');
-  };*/
+  const [show,setShow]=useState(false)
+  const [change,changeIcon]=useState({MenuLines})
+    
 
   return (
       <header>
@@ -18,19 +18,24 @@ const HeaderNav = () => {
           <img className='schoolLogo' src={SchoolLogo} alt='School logo' />
         </div>
         <div className='button-navbar'>
-          <button className='button'>
+          <button 
+          onClick={()=>{
+            setShow(!show)
+            changeIcon(!change)
+          }}
+          className='button'>
             <img className='menuLines' src={MenuLines} alt="Button" />
           </button>
-          <div className='nav-Bar inactive-Nav'>
+          {show?<div className='nav-Bar'>
             <ul>
               <li>Staff</li>
               <li>Galery</li>
               <li>How to enroll</li>
             </ul>
-          </div>
+          </div>:null}
         </div>
       </header>
   );
 }
 
-export default HeaderNav; 
+export default HeaderNav;

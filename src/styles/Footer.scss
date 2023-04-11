@@ -1,0 +1,32 @@
+@use '_vars';
+
+footer{
+  background-color: var(--darkBlue);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo{
+  width: 80px;
+  height: auto;
+
+}
+p{
+  color: white;
+  line-height: 30px;
+  font-size: 1.9rem;
+}
+.social-media{
+  width: 300px;
+  max-width: 400px;
+  padding: 10px;
+  background-color:#292c2f;
+  border-radius: 4px;
+  border-color: 5px gray solid;
+  align-self: center;
+}
+.facebook-logo{
+  width: 60px;
+
+}
