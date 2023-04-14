@@ -30,3 +30,14 @@ p{
   width: 60px;
 
 }
+
+@media(min-width: 900px){
+  footer{
+    flex-direction: unset;
+    justify-content: space-between;
+  }
+  .addr-contact{
+    justify-content: center;
+    align-self: center;
+  }
+}

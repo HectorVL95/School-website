@@ -1,35 +1,35 @@
-import React, {useState} from 'react'
+import React from 'react'
 import '../styles/Main.scss'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
 import GirlsWriting from '../assets/girls-writing.webp'
 import KidsLearning from '../assets/kids-group-learning.jpg'
-import KidsWorking from '../assets/kids-working.jpg'
-
+import KidsWorking from '../assets/kids-working.jpg';
 
 const Main = () => {
 
+  
+/*const images = [{GirlsWriting}, {KidsLearning}, {KidsWorking}]
+const goodCitizens = document.querySelector('.good-citizens');
+const interval = setInterval(function(){
+  startCarousel();
+}, 3000);
+var index = 1;
 
-  const images = [{GirlsWriting}, {KidsLearning}, {KidsWorking}]
-  const renderSlides = images.map((image) => (
-  <div>
-    <img key="{image}" src={image}/>
-  </div>
-  )
+startCarousel = () => {
+  goodCitizens.style.backgroundImage = `url(${images[index++]})`;
+  goodCitizens.classList.remove('carousel');
+    void goodCitizens.offsetWidth;
+    goodCitizens.classList.add('carousel');
+    if(index > images.length - 1) index = 0;
+};*/
 
-  )
 
 
   return (
     <main>
       <section>
-        <Carousel
-          showArrows={false}
-          autoPlay={true}
-          infiniteLoop={true}
-          className="carousel-container good-citizens">
-            {renderSlides}
-        </Carousel>
+        <div className='good-citizens carousel'>
+
+        </div>
         <article className='about'>
           <div className='about-info'>
             <p>About our School</p>   

@@ -17,6 +17,20 @@
   font-size: 1.6rem;
   font-weight: 800;
 }
+.carousel{
+      -webkit-animation: 1.5s fade;
+    animation: 1.5s fade;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+
 .about{
   background-color: var(--darkBlue) ;
   display: flex;
@@ -32,15 +46,20 @@
   background-image: url(../assets/kids-class.png);
   background-size: cover;
   background-position: center;
-
+  max-width: 680px;
+}
+.about-info:hover{
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1000px rgba(248, 115, 6, 0.2);
 }
 .about-info p{
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: var(--darkBlue);
-  font-size: 1.8rem;
+  color: White;
+  font-size: 2.5rem;
   font-weight: 800;
+
 }
 .mission{
   background-image: url(../assets/mission.jpg);
@@ -49,4 +68,7 @@
 .vision{
   background-image: url(../assets/vision.jpg);
   background-position: center;
+}
+
+@media (min-width: 900px){
 }

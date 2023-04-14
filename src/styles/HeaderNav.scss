@@ -54,6 +54,39 @@ button:focus{
   list-style: none;
   line-height: 20px;
   font-size: 1.6rem;
-
+  color: white;
 }
+.nav-Bar ul li{
+  user-select: none
+}
+.nav-Bar ul li:hover{
+  cursor: pointer;
+  color: orange;
+}
+
+/*@media (min-width: 900px){
+  button{
+    display: none;
+
+  }
+
+  .nav-Bar{
+    display: block;
+    border: none;
+    position: relative;
+    top: unset;
+    width: unset; 
+  }
+  .nav-Bar ul{
+    display: flex;
+    flex-direction: row;
+  }
+  .nav-Bar ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    user-select: none;
+  }
+
+  
+}*/
 
